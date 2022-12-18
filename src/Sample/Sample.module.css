@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    ' header header   header '
+    ' nav    contents aside  '
+    ' .....  footer   .....  ';
+  gap: 20px;
+}
+
+.header {
+  grid-area: header;
+  font-size: large;
+}
+
+.nav {
+  grid-area: nav;
+
+  /* margin-left: 50px; */
+}
+
+.contents {
+  grid-area: contents;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
