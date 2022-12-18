@@ -39,7 +39,6 @@ export const TodoContainer: FC = () => {
           .map((list, index) => (
             <div key={index}>
               {list.name}
-              {/* {list.complete} */}
               <button onClick={() => imCompleteList(list.name)}>
                 未完了に戻す
               </button>
