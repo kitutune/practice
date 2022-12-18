@@ -12,7 +12,7 @@ type ReturnType = {
 };
 
 //  useOperationsにする？
-export const useOperations = (): ReturnType => {
+export const useTodoOperations = (): ReturnType => {
   const [name, setName] = useState('');
   const dispatch = useDispatch();
   const addList = () => {
