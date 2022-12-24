@@ -24,26 +24,9 @@ export type JsonAction = {
     }>;
   };
 };
-export type PostsType = {
-  posts: Array<{
-    userId: number;
-    id: number;
-    title: string;
-    body: string;
-  }>;
-};
-export type CommentsType = {
-  comments: Array<{
-    postId: number;
-    id: number;
-    name: string;
-    email: string;
-    body: string;
-  }>;
-};
 
 export const getJsonPosts = (
-  prop: Array<{
+  props: Array<{
     userId: number;
     id: number;
     title: string;
@@ -51,7 +34,5 @@ export const getJsonPosts = (
   }>
 ): JsonAction => ({
   type: JsonActions.JSON_GET_POSTS,
-  payload: {
-    posts: prop,
-  },
+  payload: { posts: props },
 });

@@ -2,15 +2,14 @@ export const initialState: JsonState = {
   posts: [],
   comments: [],
 };
-
 export type JsonState = {
-  posts: Array<{
+  posts?: Array<{
     userId: number;
     id: number;
     title: string;
     body: string;
   }>;
-  comments: Array<{
+  comments?: Array<{
     postId: number;
     id: number;
     name: string;

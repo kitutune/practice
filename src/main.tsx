@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import App from 'App';
 import './index.css';
-import reducer from './stores/rootReducer';
 import { createStore } from 'redux';
+import App from './App';
+import reducer from './stores/rootReducer';
 
 const store = createStore(reducer);
 console.log('store.getState()', store.getState());
