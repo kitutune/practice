@@ -24,6 +24,11 @@ export const jsonReducer: Reducer<JsonState, JsonAction> = (
         posts: action.payload?.posts,
         comments: state.comments,
       };
+    case JsonActions.JSON_GET_COMMENT:
+      return {
+        ...state,
+        comments: action.payload?.comments,
+      };
 
     default:
       return state;

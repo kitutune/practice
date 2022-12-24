@@ -36,3 +36,16 @@ export const getJsonPosts = (
   type: JsonActions.JSON_GET_POSTS,
   payload: { posts: props },
 });
+
+const getJsonComment = (
+  comments: Array<{
+    postId: number;
+    id: number;
+    name: string;
+    email: string;
+    body: string;
+  }>
+): JsonAction => ({
+  type: JsonActions.JSON_GET_COMMENT,
+  payload: { comments },
+});
