@@ -24,6 +24,7 @@
     "@emotion/styled": "^11.10.0",
     "@mantine/core": "^5.9.5",
     "@mantine/hooks": "^5.9.5",
+    "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.1",
     "eslint-plugin-only-warn": "^1.1.0",
     "framer-motion": "^7.2.0",
