@@ -7,8 +7,12 @@ import { TodoSliceContainer } from 'TodoSliceComponent/Container/TodoSliceContai
 const App: FC = () => {
   return (
     <div className="App" style={{ height: '600px' }}>
+      {/** main.tsxのstoreを入れ替えるとわかる ↓ */}
+      {/** createStoreで作成したもの ↓ */}
       {/* <JsonPosts /> */}
+      {/** createStoreで作成したもの ↓ */}
       {/* <TodoContainer /> */}
+      {/** configureStoreで作成したもの ↓ */}
       <TodoSliceContainer />
     </div>
   );
